@@ -1,0 +1,255 @@
+/*
+font-family: 'Sunflower', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Hind Siliguri', sans-serif;
+font-family: 'Dosis', sans-serif;
+*/
+
+  :root {
+  --jumbotron-padding-y: 3rem;
+}
+
+* {
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-image: url('../images/kendall.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: non;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.navbar {
+  /*background-color: #f8f9fa!important;*/
+  background: none;
+  /* for background color, I removed bg-light class in nav and <div class="album py-5">*/
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+}
+
+.navbar-brand {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+}
+
+.navbar-collapse {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.navbar a {
+  color: black!important;
+}
+
+.nav-link {
+  font-size: 12px;
+}
+
+/* Search button */
+
+.input-group {
+  width: 180px; /* will it lose responsiveness?*/
+  /*border-bottom: 1px solid;*/
+}
+
+.input-group .form-control {
+  padding: .275rem .50rem;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  /*padding-right: 32px;*/
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+  z-index: 0;
+  background-color: white;
+}
+
+.input-group input { 
+  text-indent: 5px;
+}
+
+/*
+#navbarNav {
+  position: relative; //might need this to keep magnifying glass in right position
+}
+*/
+
+#navbarNav .fa-search { 
+  position: relative;
+  top: 0px;
+  left: -33px;
+  font-size: 30px;
+  color: #6288b4;
+
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* .transparent-input {
+  background: transparent; /* maybe make this slight whiter than background
+} */
+
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  /*background-color: #fff;*/
+  background: none;
+
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300; /* Play with this. Also try bold */
+  text-decoration: strong;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.text-muted {
+  color: #d7dadc!important;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.album {
+  /*background-color: #c6bcba!important;*/ /* May need to remove bg-light*/
+  /*background-color: #a29794!important;*/
+  background-color: white!important;
+  color: #000;
+}
+
+.card-body { /* remove border or make it transparent */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: black;
+  text-align: center;
+
+}
+
+.float-left-custom {
+  width: max-content;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #091477;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.float-left-custom a {
+  color: #edceaf;
+}
+
+.card-text {
+  margin-bottom: 2px;
+}
+
+.sale {
+  color: red;
+}
+
+.card { /* maybe remove background-color */
+  position: relative;
+  border: none;
+  margin: 0px;
+  margin-bottom: 15px!important;
+}
+
+.sale-image {
+  width: 80px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.new-image {
+  width: 80px;
+  position: absolute;
+  top: -8px;
+  right: -15px;
+}
+
+#items-container {
+  max-width: 960px;
+}
+
+#items-container .col-md-4 {
+  text-align: center;
+  max-width: 224px; /* why does it have to be max width */
+  max-height: 336px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.navbar .navbar-nav .fas {
+  margin-right: 3px;
+}
+
+main .album .col-md-4 p {
+  margin-bottom: 0px;
+}
+
+main .album #items-container h1 {
+  margin-top: 40px;
+}
+
+footer {
+  background: #eeeeee;
+  color: black!important;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
