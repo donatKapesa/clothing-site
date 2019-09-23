@@ -7,16 +7,16 @@ font-family: 'Hind Siliguri', sans-serif;
 font-family: 'Dosis', sans-serif;
 */
 
-  :root {
+:root {
   --jumbotron-padding-y: 3rem;
 }
 
 * {
-  -webkit-font-smoothing:antialiased;
-  -moz-font-smoothing:antialiased;
-  -o-font-smoothing:antialiased;
-  font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
-  background-image: url('../images/kendall.jpg');
+  font-family: "Dosis", sans-serif;
+  background-image: url("../images/kendall.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -54,16 +54,16 @@ a:hover {
 }
 
 .navbar-brand {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-size: 25px;
 }
 
 .navbar-collapse {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .navbar a {
-  color: black!important;
+  color: black !important;
 }
 
 .nav-link {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .input-group .form-control {
-  padding: .275rem .50rem;
+  padding: 0.275rem 0.5rem;
   border: none;
   background: transparent;
   border-bottom: 1px solid;
@@ -91,7 +91,7 @@ a:hover {
   background-color: white;
 }
 
-.input-group input { 
+.input-group input {
   text-indent: 5px;
 }
 
@@ -101,7 +101,7 @@ a:hover {
 }
 */
 
-#navbarNav .fa-search { 
+#navbarNav .fa-search {
   position: relative;
   top: 0px;
   left: -33px;
@@ -117,14 +117,12 @@ a:hover {
   background: transparent; /* maybe make this slight whiter than background
 } */
 
-
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   /*background-color: #fff;*/
   background: none;
-
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -140,7 +138,7 @@ a:hover {
 .jumbotron-heading {
   font-weight: 300; /* Play with this. Also try bold */
   text-decoration: strong;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .jumbotron .container {
@@ -148,23 +146,23 @@ a:hover {
 }
 
 .text-muted {
-  color: #d7dadc!important;
-  font-family: 'Hind Siliguri', sans-serif;
+  color: #d7dadc !important;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .album {
   /*background-color: #c6bcba!important;*/ /* May need to remove bg-light*/
   /*background-color: #a29794!important;*/
-  background-color: white!important;
+  background-color: white !important;
   color: #000;
 }
 
-.card-body { /* remove border or make it transparent */
+.card-body {
+  /* remove border or make it transparent */
   padding-top: 0px;
   padding-bottom: 0px;
   color: black;
   text-align: center;
-
 }
 
 .float-left-custom {
@@ -175,7 +173,7 @@ a:hover {
   font-weight: 300;
   font-size: 2rem;
   line-height: 1.2;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .float-left-custom a {
@@ -190,11 +188,12 @@ a:hover {
   color: red;
 }
 
-.card { /* maybe remove background-color */
+.card {
+  /* maybe remove background-color */
   position: relative;
   border: none;
   margin: 0px;
-  margin-bottom: 15px!important;
+  margin-bottom: 15px !important;
 }
 
 .sale-image {
@@ -244,7 +243,7 @@ main .album #items-container h1 {
 
 footer {
   background: #eeeeee;
-  color: black!important;
+  color: black !important;
   padding: 10px;
 }
 
@@ -252,4 +251,63 @@ footer a {
   text-decoration: underline;
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.projects-container
+  .project-card
+  .project-content
+  .project-links
+  .project-link.secondary {
+  background: #fff;
+  color: #747fe0;
+}
+
+.projects-container
+  .project-card
+  .project-content
+  .project-links
+  .project-link {
+  margin-right: 20px;
+  margin-top: 20px;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: #747fe0;
+  color: #fff;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.view-on-github {
+  background: #deaf8a;
+  padding: 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
+}
